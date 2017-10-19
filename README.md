@@ -35,10 +35,20 @@ Now you can extend the vue-test-utils classes like so:
     module.exports = vtu.exportDefault;
 ```
 
+> **Careful!!** Notice that we are exporting `vtu.exportDefault`. This is necessary to maintain the default functionality of vue-test-utils.
+
 On your test file, you should import `./vue-test-util-ext.js` instead of `vue-test-util` and now you have access to the method:
 
 ```js
-    wrapper.find("button").isHidden() // return => bool
+    // ./specs/example.spec.js
+    var vtu = require("./vue-test-util-ext");
+    
+    var example = {
+        template: `<div class="hiddenDiv" v-show="false">This should be hidden</div>`
+    }
+    
+    var wrapper = vtu.mount(example);
+    wrapper.find(".hiddenDiv").isHidden() // return => true
 ```
 
 ## Methods

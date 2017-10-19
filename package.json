@@ -16,7 +16,7 @@
     "url": "https://github.com/olavoasantos/vtu-extension/issues"
   },
   "homepage": "https://github.com/olavoasantos/vtu-extension#readme",
-  "devDependencies": {
+  "dependencies": {
     "vue-test-utils": "^1.0.0-beta.2"
   }
 }
