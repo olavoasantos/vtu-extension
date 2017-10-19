@@ -1,0 +1,22 @@
+{
+  "name": "vtu-extension",
+  "version": "0.0.1",
+  "description": "Simple little trick to make vue-test-utils (beta) extensible",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olavoasantos/vtu-extension.git"
+  },
+  "keywords": [
+    "vue-test-utils"
+  ],
+  "author": "Olavo Amorim Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/olavoasantos/vtu-extension/issues"
+  },
+  "homepage": "https://github.com/olavoasantos/vtu-extension#readme",
+  "devDependencies": {
+    "vue-test-utils": "^1.0.0-beta.2"
+  }
+}
